@@ -29,7 +29,9 @@ $EndTime = [datetime]::Today.AddDays(1)
  
 #the max amount of ID filterhashtable can handle is 22 (23?), so a workaround is needed it you want to use this format  
  for ($i = 0; $i -lt $id.count; $i=$i+21) { 
-    [array]$events += Get-WinEvent -FilterHashtable @{logname=$logname; id= $id[$i..($i+21)]}}  
+    [array]$events += Get-WinEvent -FilterHashtable @{logname=$logname; id= $id[$i..($i+21)]; StartTime=$StartTime; EndTime=$EndTime}
+
+    }  
     
 
 
