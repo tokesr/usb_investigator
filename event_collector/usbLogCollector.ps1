@@ -14,6 +14,7 @@ $ErrorActionPreference = "SilentlyContinue"
 # Device Setup Manager logs: 100,101,112
 # PnP detailed tracking logs: 6416
 # Object access audit events: 4656,4663,4658,4690
+# DriverFw preconnection: 1003,2000,2001,1004
 # DriverFw connection-related logs: 2003,2010,2004,2006,2100,2105,2106,2101,2102
 # DriverFw removal-related logs: 1006,2900,2901,1008
 # System: DriverFramework-Usermode events: 10000,10001,10002,10100
@@ -22,7 +23,7 @@ $ErrorActionPreference = "SilentlyContinue"
 
 
 $logname='System','Security','Microsoft-Windows-DeviceSetupManager/Admin','Microsoft-Windows-DriverFrameworks-UserMode/Operational','Microsoft-Windows-Kernel-PnP/Configuration','Microsoft-Windows-Ntfs/Operational','Microsoft-Windows-Partition/Diagnostic','Microsoft-Windows-Storage-ClassPnP/Operational','Microsoft-Windows-Storsvc/Diagnostic'
-$id=100,101,112,1002,507,6416,4656,4663,4658,4690,1006,142,145,400,410,430,6416,4656,4663,4658,4690,2003,2010,2004,2006,2100,2105,2106,2101,2102,1006,2900,2901,1008,10000,10001,10002,10100,20001,20002,20003,24576,24577,24578,24579
+$id=100,101,112,1002,507,6416,4656,4663,4658,4690,1006,142,145,400,410,430,6416,4656,4663,4658,4690,1003,2000,2001,1004,2003,2010,2004,2006,2100,2105,2106,2101,2102,1006,2900,2901,1008,10000,10001,10002,10100,20001,20002,20003,24576,24577,24578,24579
 
 $StartTime =  [datetime]::Today.AddDays(-30)
 $EndTime = [datetime]::Today.AddDays(1)
